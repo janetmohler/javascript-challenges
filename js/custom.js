@@ -10,13 +10,13 @@ function fooBar (number) {
   var results = $("#output-foobar");
   for (var currentNumber = 1; currentNumber <= number; currentNumber += 1) {
     if (currentNumber % 3 === 0 && currentNumber % 5 === 0) {
-      results.append("FooBar");
+      results.append("FooBar" + " <br>");
     } else if (currentNumber % 3 === 0) {
-      results.append("Foo");
+      results.append("Foo" + " <br>");
     } else if (currentNumber % 5 === 0) {
-      results.append("Bar");
+      results.append("Bar" + " <br>");
     } else {
-      results.append(currentNumber);
+      results.append(currentNumber + " <br>");
     }
   }
 }
@@ -46,6 +46,15 @@ $(document).ready(function() {
     $("#output-temp").text(conversion + " degrees Fahrenheit");
 
     $("#input-temp").val("");
+  });
+
+  $("#foobar").submit(function(event) {
+    event.preventDefault();
+    $("#output-foobar").empty();
+    var getInputFoobar = parseInt($("#input-foobar").val());
+    fooBar(getInputFoobar);
+
+    $("#input-foobar").val("");
   });
 
 
