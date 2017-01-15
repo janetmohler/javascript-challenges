@@ -38,6 +38,7 @@ function ordinal(number) {
   }
 }
 
+//User Interface 
 $(document).ready(function() {
   $("#cel2fah").submit(function(event) {
     event.preventDefault();
@@ -57,5 +58,11 @@ $(document).ready(function() {
     $("#input-foobar").val("");
   });
 
+  $("#ordinal").submit(function(event) {
+    event.preventDefault();
+    var getInputOrdinal = parseInt($("#input-ordinal").val());
+    ordinal(getInputOrdinal);
 
+    $("#input-ordinal").val("");
+  })
 });
