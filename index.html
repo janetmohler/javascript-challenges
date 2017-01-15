@@ -20,19 +20,47 @@
 
   <body>
     <div class="container">
+      <!-- Temperature conversion challenge -->
       <div class="col-xs-12 col-md-4">
         <h3>Celsius to Fahrenheit</h3>
         <p class="well">Convert temperatures from Celsius to Fahrenheit.</p>
+        <form id="cel2fah" class="form-inline">
+          <div class="form-group">
+            <input type="text" class="form-control" id="input-temp" placeholder="Enter degrees in Celsius">
+          </div>  
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+        <br>
+        <div id="output-temp">
+        </div>
       </div>
-
+      <!-- Foobar challenge -->
       <div class="col-xs-12 col-md-4">
         <h3>Foobar</h3>
-        <p class="well">Print the word "foo" for numbers that are divisible by three. Print "bar" for numbers that are divisible by five. Print "foobar" for numbers that are divisible by both.</p>
+        <p class="well">Print the word "Foo" for numbers that are divisible by three. Print "Bar" for numbers that are divisible by five. Print "FooBar" for numbers that are divisible by both.</p>
+        <form class="form-inline">
+          <div class="form-group">
+            <input type="text" class="form-control" id="input-foobar" placeholder="Enter a number">
+          </div>  
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+        <br>
+        <div id="output-foobar">
+        </div>
       </div>
-
+      <!-- Ordinal challenge -->
       <div class="col-xs-12 col-md-4">
         <h3>Ordinal</h3>
-        <p class="well">Convert numbers like 1, 2, 3 into ordinals like 1st, 2nd, 3rd, etc.
+        <p class="well">Convert numbers like 1, 2, 3 into ordinals like 1st, 2nd, 3rd, etc.</p>
+        <form class="form-inline">
+          <div class="form-group">
+            <input type="text" class="form-control" id="input-ordinal" placeholder="Enter a number">
+          </div>  
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+        <br>
+        <div id="output-ordinal">
+        </div>
       </div>
     </div>    
   </body>
